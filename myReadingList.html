@@ -11,7 +11,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        body {
+            background-color: azure;
+        }
+        blockquote{
+      font-family: "Sofia", sans-serif;
+    }
+    </style>
 </head>
 
 <body>
@@ -33,22 +41,22 @@
 
 
 
-                            <span class="fs-4">Suganya Senguttuvan</span>
+                            <span class="fs-4" style="color:cornflowerblue">Suganya Senguttuvan</span>
 
 
                         </a>
                         <ul class="navbar-nav col-lg-4 justify-content-lg-center">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.html"><b>Home</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="projects.html">Projects</a>
+                                <a class="nav-link" href="projects.html"><b>Projects</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="myReadingList.html">My Reading List</a>
+                                <a class="nav-link active" href="myReadingList.html"><b>My Reading List</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.html"><b>Contact</b></a>
                             </li>
 
 
@@ -83,22 +91,9 @@
                     <p>
                         Below are some of my favorite books that I recommend reading. (PS: This is same as Obama's)
                     </p>
-                    <!-- 
-              Sea of Tranquility by Emily St. John Mandel
-Trust by Hernan Diaz
-The Revolutionary: Samuel Adams by Stacy Schiff
-The Furrows by Namwali Serpell
-South to America: A Journey Below the Mason-Dixon Line to Understand the Soul of America by Imani Perry
-The School for Good Mothers by Jessamin Chan
-Black Cake by Charmaine Wilkerson
-Ducks: Two Years in the Oil Sands by Kate Beaton
-An Immense World: How Animal Senses Reveal the Hidden Realms Around Us by Ed Yong
-Liberation Day by George Saunders
-The Candy House by Jennifer Egan
-Afterlifes by Abdulrazak Gurnah
--->
+
                     <p>
-                    <table class="table">
+                    <table class="table" id="myReadinListTable">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -107,46 +102,11 @@ Afterlifes by Abdulrazak Gurnah
                             </tr>
                         </thead>
                         <tbody>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Trust</td>
-                                <td>Hernan Diaz</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>The Revolutionary: Samuel Adams</td>
-                                <td>Stacy Schiff</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>South to America: A Journey Below the Mason-Dixon Line to Understand the Soul of
-                                    America</td>
-                                <td>Imani Perry</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Sea of Tranquility</td>
-                                <td>St. John Mandel</td>
-
-                            </tr>
                         </tbody>
                     </table>
-
-
                     </p>
-
-
-
-
                 </div>
-
-
-
             </div>
-
             <footer class="pt-5 my-5 text-muted border-top">
                 Suganya Senguttuvan &middot; &copy; 2023
             </footer>
@@ -158,6 +118,13 @@ Afterlifes by Abdulrazak Gurnah
         crossorigin="anonymous"></script>
 
     </main>
+
+    <!-- Importing external javascript library - JQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="readingListLoader.js" />
 
 
 </body>
